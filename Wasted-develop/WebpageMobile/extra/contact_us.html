@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wasted</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header class="header_logo">
+		<div id="login">
+			<button id="signOutBtn"></button>
+		</div>
+	</header>
+	
+	<div class="topnav" id="myTopnav">
+		<a href="contact_us.html">Contact Us</a>
+		<a href="fridge.html">MyFridge</a>
+		<a href="about_us.html">About Us</a>
+		<a href="affiliate.html">Affiliates</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+	
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
+	
+	<div id="content">	
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. 
+		Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo 
+		magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque 
+		habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra 
+		nonummy pede. Mauris et orci. Aenean nec lorem.</p>
+		
+		<p>In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae,
+		pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy. Fusce aliquet pede 
+		non pede. Suspendisse dapibus lorem pellentesque magna. Integer nulla. Donec blandit feugiat ligula.
+		Donec hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget 
+		sapien.Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam erat volutpat. Sed at lorem 
+		in nunc porta tristique. Proin nec augue. Quisque aliquam tempor magna. Pellentesque habitant morbi 
+		tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ac magna. Maecenas odio dolor,
+		vulputate vel, auctor ac, accumsan id, felis. Pellentesque cursus sagittis felis.</p>
+	</div>
+	
+		<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+	<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyDaSug6WUrMPDSlcRO3OOU4yw0zXsJP3og",
+		authDomain: "fir-web-learn-6d987.firebaseapp.com",
+		databaseURL: "https://fir-web-learn-6d987.firebaseio.com",
+		projectId: "fir-web-learn-6d987",
+		storageBucket: "fir-web-learn-6d987.appspot.com",
+		messagingSenderId: "15555479095"
+	};
+	firebase.initializeApp(config);
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	
+	<script src = "index.js"> </script>
+
+</body>
+
+</html>

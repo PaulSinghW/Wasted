@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wasted</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header id="links">	
+		<div id="loginLinks">
+			<button id="signOutBtn"></button>
+		</div>
+	</header>
+
+	
+	<div id="pics">	
+		
+		
+		<div name="fridgeLogo" id="fridgeLogo">
+			<a href="fridge.html"><img src="images/fridge.png" alt="fridge"></a>
+			<label for="fridgeLogo"> MyFridge </label>
+		</div>
+				
+		<div name="person" id="person">
+			<a href="about_us.html"><img src="images/person.png" alt="person"></a>
+			<label for="person"> About Us</label>
+		</div>
+				
+		<div name="phone" id="phone">
+			<a href="contact_us.html"><img src="images/phone.png" alt="fridge"></a>
+			<label for="phone"> Contact Us </label>
+		</div>
+		
+		<div name="info" id="info">
+			<a href="info.html"><img src="images/magnifying.png" alt="fridge"></a>
+			<label for="info"> Information </label>
+		</div>
+		
+	</div>
+	
+	
+	
+		<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+	<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyDaSug6WUrMPDSlcRO3OOU4yw0zXsJP3og",
+		authDomain: "fir-web-learn-6d987.firebaseapp.com",
+		databaseURL: "https://fir-web-learn-6d987.firebaseio.com",
+		projectId: "fir-web-learn-6d987",
+		storageBucket: "fir-web-learn-6d987.appspot.com",
+		messagingSenderId: "15555479095"
+	};
+	firebase.initializeApp(config);
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script src = "index.js"> </script>
+	
+</body>
+
+</html>

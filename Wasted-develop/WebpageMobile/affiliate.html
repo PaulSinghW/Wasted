@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Wasted</title>
+      <!-- Code for social media panel -->	
+      <!-- for Facebook -->   
+      <meta property="og:url"           content="http://students.bcitdev.com/A00541112/WebpageMobile/affiliate.html" />
+      <meta property="og:type"          content="website" />
+      <meta property="og:title"         content="Wasted!" />
+      <meta property="og:description"   content="Your go to food waste management solution!" />
+      <meta property="og:image"         content="http://students.bcitdev.com/A00541112/WebpageMobile/images/food_waste2.jpg" />
+      <meta property="og:image:width"		content="850" />
+      <meta property="og:image:height"	content="1550" />
+      <!-- for Google -->
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta name="author" content="" />
+      <meta name="copyright" content="" />
+      <meta name="application-name" content="" />
+      <!-- for Twitter -->          
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="" />
+      <meta name="twitter:description" content="" />
+      <meta name="twitter:image" content="" />
+      <!-- Code for social media panel -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <!-- facebook share -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+         fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <!-- facebook share -->
+      <header class="header_logo">
+         <a href = "fridge.html">
+            <div id="login">
+               <button id="signOutBtn"></button>
+               <div class="fb-share-button" data-href="http://students.bcitdev.com/A00541112/WebpageMobile/affiliate.html" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+         <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstudents.bcitdev.com%2FA00541112%2FWebpageMobile%2Faffiliate.html&amp;src=sdkpreparse"><img src="images/facebookshare.jpg" alt="Share on Facebook!"></a></div>
+         </div>
+      </header>
+      </a>
+      <div class="topnav" id="myTopnav">
+         <a href="affiliate.html">Affiliates</a>
+         <a href="fridge.html">MyFridge</a>
+         <a href="about_us.html">About Us</a>
+         <a href="contact.html">Contact Us</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <script>
+         function myFunction() {
+         	var x = document.getElementById("myTopnav");
+         	if (x.className === "topnav") {
+         		x.className += " responsive";
+         	} else {
+         		x.className = "topnav";
+         	}
+         }
+      </script>
+      <div id="affiliate">
+         <div class="alt">
+            <h1 id="title"> Affiliates </h1>
+            <p class="appContent"></p>
+            <h1 class="titles"> 1) Waste Hub </h1>
+            <img id="waste" src="images/wastehub_logo[339].png" alt="Waste Hub">
+            <p class="appContent">WasteHub is a mobile web app that helps you keep track of your food waste. Users 
+               input their food waste, then WasteHub shows your total food waste and associated wasted resources so 
+               you can effectively identify and improve your food waste habits.
+            </p>
+            <a class="visit" href="https://wastehub-55a96.firebaseapp.com/">VISIT PAGE</a>
+         </div>
+         <div class="alt1">
+            <h1 class="titles"> 2) Take 2 </h1>
+            <img id="take" src="images/take2-logo-1.png" alt="Take 2">
+            <p class="appContent">A website where you take two ingredients, and the user gets suggested recipes. Users 
+               will be given recipes and directions on how to make the dishes.
+            </p>
+            <a class="visit" href="http://www.take2foods.com/">VISIT PAGE</a>
+         </div>
+         <div class="alt">
+            <h1 class="titles"> 3) Food Factory Zero </h1>
+            <img id="foodFactory" src="images/foodfactoryzero-logo.png" alt="Food Factory Zero">	
+            <p class="appContent">A time-based drag and drop game. Users need to pick and match the ingredients with 
+               recipes. The game raises the awareness of food waste through game play. Users are required to use the 
+               ingredients without wasting them.
+            </p>
+            <a class="visit" href="http://students.bcitdev.com/A01006039/ffz/">VISIT PAGE</a>	
+         </div>
+      </div>
+      <footer>
+         <p>Copyright &copy; Wasted(G_40), 2017</p>
+      </footer>
+      <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+      <script>
+         // Initialize Firebase
+         var config = {
+           apiKey: "AIzaSyAj1O3mHy232iMV6c7yBlXIqTf5iIaVep0",
+           authDomain: "wasted-bcc00.firebaseapp.com",
+           databaseURL: "https://wasted-bcc00.firebaseio.com",
+           projectId: "wasted-bcc00",
+           storageBucket: "wasted-bcc00.appspot.com",
+           messagingSenderId: "1030069725779"
+         };
+         firebase.initializeApp(config);
+      </script>
+      <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+      <script src = "index.js"> </script>
+   </body>
+</html>

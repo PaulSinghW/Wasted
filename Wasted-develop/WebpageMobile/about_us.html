@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Wasted</title>
+      <!-- Code for social media panel -->	
+      <!-- for Facebook -->   
+      <meta property="og:url"           content="http://students.bcitdev.com/A00541112/WebpageMobile/about_us.html" />
+      <meta property="og:type"          content="website" />
+      <meta property="og:title"         content="Wasted!" />
+      <meta property="og:description"   content="Your go to food waste management solution!" />
+      <meta property="og:image"         content="http://students.bcitdev.com/A00541112/WebpageMobile/images/food_waste2.jpg" />
+      <meta property="og:image:width"		content="850" />
+      <meta property="og:image:height"	content="1550" />
+      <!-- for Google -->
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta name="author" content="" />
+      <meta name="copyright" content="" />
+      <meta name="application-name" content="" />
+      <!-- for Twitter -->          
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="" />
+      <meta name="twitter:description" content="" />
+      <meta name="twitter:image" content="" />
+      <!-- Code for social media panel -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <!-- facebook share -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+         fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <!-- facebook share -->
+      <header class="header_logo">
+         <a href = "fridge.html">
+            <div id="login">
+               <button id="signOutBtn"></button>
+               <div class="fb-share-button" data-href="http://students.bcitdev.com/A00541112/WebpageMobile/about_us.html" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+         <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstudents.bcitdev.com%2FA00541112%2FWebpageMobile%2Fabout_us.html&amp;src=sdkpreparse"><img src="images/facebookshare.jpg" alt="Share on Facebook!"></a></div>
+         </div>
+      </header>
+      </a>
+      <div class="topnav" id="myTopnav">
+         <a href="about_us.html">About Us</a>
+         <a href="fridge.html">MyFridge</a>
+         <a href="affiliate.html">Affiliates</a>
+         <a href="contact.html">Contact Us</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <script>
+         function myFunction() {
+         	var x = document.getElementById("myTopnav");
+         	if (x.className === "topnav") {
+         		x.className += " responsive";
+         	} else {
+         		x.className = "topnav";
+         	}
+         }
+      </script>
+      <div id="content">
+         <div style="text-align: center">
+            <h1 id="title">About Us</h1>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/BTTA2AUIxOc?ecver=1" frameborder="0" allowfullscreen id="wastedVideo"></iframe>
+         </div>
+         <div id="teamMembers">
+            <p class="appContent"></p>
+            <div class="alt">
+               <h2 class="titles"> Alex Abdulla </h2>
+               <img id="waste" src="images/alex.jpg" alt="alex">
+               <p class="appContent">Alex is a B.C. native with a degree in Philosophy an Literature from UBC. Alex is currently employed as an ESL Teacher and enrolled at BCIT as a Software Development student. He has a deep love of food, travel, and cultures which he loves to bring to his work both as a teacher and a developer.</p>
+            </div>
+            <div class="alt1">
+               <h2 class="titles"> Simran Waraich </h2>
+               <img id="take" src="images/simran.jpg" alt="simran">
+               <p class="appContent">Simran Waraich grew up in Surrey and is currently a BCIT CST student. His passion is in machine learning and AI and one day hopes to be able to contribute to the field.</p>
+            </div>
+            <div class="alt">
+               <h2 class="titles"> Misha Sousa </h2>
+               <img id="foodFactory" src="images/misha.jpg" alt="misha">	
+               <p class="appContent">Misha has lived in Surrey his entire life. After working full time for some years, he decided to go back to school at BCIT to become a software engineer.</p>
+            </div>
+            <div class="alt1">
+               <h2 class="titles"> Dasha Strigoun </h2>
+               <img id="foodFactory" src="images/dasha.jpg" alt="dasha">	
+               <p class="appContent">Dasha was born in Moscow not too long ago and somehow ended up in Vancouver, BC. She's currently in the CST program at BCIT where she's learning loads about coding and team work!</p>
+            </div>
+            <div class="alt">
+               <h2 class="titles"> Bhagwan Virdi </h2>
+               <img id="foodFactory" src="images/bhagwan.jpg" alt="bhagwan">
+               <p class="appContent">Bhagwan grew up in North Delta, and graduated highschool in 2015. He took time off from studying to get a job as a painter and a year later, he decided to go to BCIT in order become a software engineer.</p>
+            </div>
+         </div>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+      <script>
+         // Initialize Firebase
+         var config = {
+           apiKey: "AIzaSyAj1O3mHy232iMV6c7yBlXIqTf5iIaVep0",
+           authDomain: "wasted-bcc00.firebaseapp.com",
+           databaseURL: "https://wasted-bcc00.firebaseio.com",
+           projectId: "wasted-bcc00",
+           storageBucket: "wasted-bcc00.appspot.com",
+           messagingSenderId: "1030069725779"
+         };
+         firebase.initializeApp(config);
+      </script>
+      <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+      <script src = "index.js"> </script>
+   </body>
+</html>

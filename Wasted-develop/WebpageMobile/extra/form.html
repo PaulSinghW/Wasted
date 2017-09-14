@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wasted</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header>	
+		<div id="dropdown-nav">
+			<button class="drop"><img id="menu" src="images/menu.png" alt="Menu"></button>	
+			
+				<div id="dropdown-content">
+					<a href="index.html">Home</a>
+					<a href="about_us.html">About Us</a>
+					<a href="contact_us.html">Contact us</a>
+					<a href="fridge.html">My Fridge</a>
+					<a href="info.html">Information</a>
+				</div>
+		</div>
+		
+		<h1 id="title"> <a href="index.html"> <img id="logo" src="images/logo.png" alt="Logo"> </a> </h1>
+		
+
+		
+	</header>
+
+	
+	
+	<div id="form">
+	
+		<div id="login_form">
+			
+				<h1> Login </h1>
+							
+					<input type="text" id="loginEmail" placeholder="Sign in ID here..."><br>
+					<input type="text" id="loginPassword" placeholder="Sign in password here..."><br>
+					<button id="loginBtn">Sign In</button>
+					
+				<p id="signInError"></p>
+		</div>
+		
+		
+		<div id="sign_up">	
+		
+					
+				<h1>Sign Up</h1>
+					
+					<input type="text" id="signUpEmail" placeholder="Sign in ID here..."><br>
+					<input type="text" id="signUpPassword" placeholder="Sign in password here..."><br>
+					<button id="signUpBtn">Sign Up</button>
+											
+				<p id="signUpError" style="hide"></p>
+		</div>  
+	</div>
+	
+	<footer>
+		<p>Copyright &copy; Wasted(G_40), 2017</p>
+	</footer>
+
+	
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+	<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyDaSug6WUrMPDSlcRO3OOU4yw0zXsJP3og",
+		authDomain: "fir-web-learn-6d987.firebaseapp.com",
+		databaseURL: "https://fir-web-learn-6d987.firebaseio.com",
+		projectId: "fir-web-learn-6d987",
+		storageBucket: "fir-web-learn-6d987.appspot.com",
+		messagingSenderId: "15555479095"
+	};
+	firebase.initializeApp(config);
+	</script>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="form.js"></script>
+
+	
+	
+</body>
+
+</html>

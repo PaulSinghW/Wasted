@@ -1,0 +1,659 @@
+/* THIS IS THE MAIN STYLE CSS */
+
+/* CSS for general body of page */
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Trebuchet MS, Arial, sans-serif;
+}
+
+/* CSS for header */
+header {
+	background-image: url('images/logo.png');
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* CSS for the footer */
+footer {
+	z-index: 100; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+	text-align: center;
+    height: 150px;
+    line-height: 120px;
+    font-style: italic;
+    font-size: 1.4em;
+	background-color:#333;
+	color: white;
+	line-height: 150px;
+}
+
+/* Facebook CSS */
+.fb-share-button {
+margin-left: 1%;
+margin-top: 1%;
+}
+.header_logo {
+	height: 295px
+}
+.head {	
+	margin: 0;
+    padding-bottom: 2%;
+}
+.daysLeft {
+	margin: 0;
+    padding-bottom: 2%;
+}
+#index {
+    width: 490px;
+    margin: 14px 105px;
+}
+#signOutBtn {
+	float: right;
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 2em;
+    margin-right: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+/* CSS for nav bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.5em;
+}
+.icon {
+	height: 46.4px;
+	line-height: 46.4px;
+	font-size:2.5em;
+	color: #f2f2f2;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+  	float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* CSS for the index page */
+#signInError {
+	color: red;
+	font-size: 2.5em;
+	text-align: center;
+}
+#signUpError {
+	color: red;
+	font-size: 2.5em;
+	text-align: center;
+}
+.index_form {    
+	width: 80%;
+	padding-top: 3%;
+	padding-bottom: 6%;
+    margin: 25px auto;
+}
+.index_form input {
+    width: 100%;
+	height: 65px;
+	border: 4px solid Gray;
+	font-size: 2.4em;
+	padding-left: 7px;
+}
+#signUpPassword {
+	margin-bottom: 10px;
+}
+#loginPassword {
+	margin-bottom: 10px;
+}
+#googleBtn {
+    background-image: url('images/google.png');
+    background-repeat: no-repeat;
+    background-position: 10px ; 
+    background-size: 25px;
+    background-color: #FFFFFF;
+    border-radius: 36px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    text-decoration: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 2.3em;
+    display: inline-block;
+    width: 100%;
+}
+#googleDiv {
+    width: 80%;
+	margin: 0 auto;
+	padding: 6px 12px;
+}
+#pop a {
+	text-decoration: none;
+    color: black;
+    font-size: 1.6em;
+	color:white;
+}
+#pop {
+	background-color: #4CAF50;	
+	width:29%;
+	margin: 15px auto;
+	text-align: center;
+    border-radius: 36px;
+	padding: 5px 0;
+}
+#pop:active {
+    background-color: #306F33;
+}
+#sign_up {
+	display: none;
+}
+.indexB {
+	background-color: #4CAF50;
+	border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.3em;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 36px;
+	float: right;
+	width: 100%;
+}
+.indexB:hover {
+	background-color: #306F33;
+}
+#form {
+    margin-bottom: 200px;
+	position: static;
+	background-color: #dcdcdc;
+	border: 5px solid black;
+    border-radius: 30px;
+    width: 700px;
+	margin: 15% auto;
+}
+#form {
+	background-image: url('images/form.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#background {
+	background-image: url('images/nature_desktop.jpg');
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}	
+@media screen and (max-width: 1300px) {
+	#background {
+		background-image: url('images/nature.jpg');
+	}
+}
+	
+/* CSS for the fridge page */
+#myBtn {
+	margin-bottom:30px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.6em;
+    cursor: pointer;
+    width: 40%;
+    margin-top: 12px;
+	float: right;
+	margin-right: 7%;
+}
+#topRemoveBtn {
+	margin-bottom:30px;
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.6em;
+    cursor: pointer;
+    width: 40%;
+    margin-top: 12px;
+	float: left;
+	margin-left: 7%;
+}
+@media screen and (max-width: 1100px) {
+	#myBtn {
+		float: right;
+		background-color: #4CAF50;	
+		border: none;
+		color: white;
+		padding: 20px 30px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 6em;
+		margin-right: 30px;
+		cursor: pointer;
+		border-radius: 76px;
+		position: fixed;
+		right: 9px;
+		bottom: 6px;
+		z-index: 1;
+		width: 150px;
+	}
+	#topRemoveBtn {
+		background-color: #333;
+		border: none;
+		color: white;
+		padding: 8px 12px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 2.6em;
+		cursor: pointer;
+		width: 100%;
+		margin-top: 12px;
+		margin-left: 0;
+	}
+}
+#bottomRemoveBtn {
+	background-color: #333;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.6em;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 12px;
+}
+#add_item {
+    width: 80%;
+    margin: 5% auto;
+	background-color: #f2f2f2;
+    padding: 36px;
+	border-radius: 20px;
+}
+#formTitle {
+	font-size: 3.6em;
+    background-color: #333;
+    color: white;
+	padding: 7px 192px;
+	margin:0;
+	border-radius: 16px;
+}
+.fPage {
+	font-size: 2.3em;
+}
+.addInput {
+    width: 100%;
+    height: 35px;
+    font-size: 2.1em;
+    border: 1px solid grey;
+    padding: 2px 2px;
+	margin-bottom: 12px;
+}
+input.add {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.0em;
+    cursor: pointer;
+    width: 49%;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+#picAdd {
+	display: none;	
+}	
+
+/* CSS for pop up */
+.modal2 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 36px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* CSS for modal content */
+.modal-content {
+  background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 4px solid #333;
+    width: 700px;
+    height: 580px;
+    border-radius: 30px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 55px;
+    font-weight: bold;
+    padding: 5px 20px;
+    height: 71px;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* CSS for selected */
+.highlight {
+    color: green;
+    font-weight: bold;
+	font-size: 1.5em;
+	border-style: 3px solid black;
+}
+
+/* CSS for the calender */
+div.ui-datepicker {
+	font-size: 32px;
+}
+
+/* CSS for the table */
+table.dataTable tbody tr { 
+	height: 150px;
+	font-size:2.25em;
+}
+#fridge_length {
+    font-size: 2.25em;
+}
+#fridge_length select {
+    font-size: 1.1em;
+}
+#fridge_filter {
+    font-size: 2.25em;
+}
+input[type="search"] {
+    font-size: 1em;
+	margin-right: 2px;
+    border: 1px solid black;
+}
+#fridge thead {
+    font-size: 2.25em;
+}
+#fridge_paginate {
+    font-size: 2.25em;
+}
+#fridge_info {
+    font-size: 2.25em;
+}
+#place_holder {
+    padding: 15px 0;
+	margin-bottom: 190px;
+}
+#table_body {
+    text-align: center;
+}
+
+/* CSS for pop up2 */
+#ex1 {
+	height: 75%;
+	width: 70%;
+}
+
+/* CSS for selected tr */
+.highlight {
+    color: green;
+    font-weight: bold;
+	font-size: 1.5em;
+	border-style: 3px solid black;
+}
+tr:hover td { 
+	border-style: solid;
+}
+
+/* CSS for the affiliates page */
+.appContent {
+	text-align: center;
+	font-size: 1.8em;
+	padding: 0 25px;
+}
+#race {
+    width: 70%;
+    margin-left: 15%;
+}
+#foodFactory {
+    width: 40%;
+    margin-left: 30%;
+}
+.titles {
+    font-size: 4em;
+    margin: 0;
+	padding: 25px 0;
+	text-align: center;
+}
+#take {
+    width: 42%;
+    margin-left: 29%;
+}
+#title {
+	font-size: 5em;
+    text-align: center;
+	margin: 0;
+}
+.alt {
+	background-color: #DCDCDC;
+	padding: 20px 0;
+}
+.alt1 {
+	padding: 20px 0;
+}
+#waste {
+    width: 46%;
+    margin-left: 27%;
+}
+.visit {
+	background-color: #333	;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 22%;
+    cursor: pointer;
+    font-size: 2.2em;
+    border-radius: 36px;
+    margin: 0 34%;
+}
+
+/* CSS for the about us page */
+#food {
+	width: 100%;
+    background-color: #d2d2d2;
+    height: 110px;
+}
+#accordion {
+    font-size: 2.5em;
+}
+#wastedVideo {
+    padding: 5px;
+    margin: 20px;
+    display: inline-block;
+}
+.pics {
+	height: 183px;
+    width: 183px;
+    border-radius: 400px;
+}
+.picTitle {
+    width: 183px;
+    text-align: center;
+    margin: 14px 0;
+}
+.contain {
+    width: 186px;
+    float: left;
+}
+#contentPic {
+    width: 81%;
+    margin: 0 auto;
+}
+#picAdd {
+    display: none;
+    width: 690px;
+    background-color: white;
+    margin-bottom: 40px;
+    height: 785px;
+    border: 4px solid #333;
+    margin-top: 62px;
+    padding: 18px 0;
+    border-radius: 24px;
+}
+
+/* CSS and animation for the loading gif */
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	z-index: 1;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1s
+}
+@-webkit-keyframes animatebottom {
+	from { bottom:-100px; opacity:0 } 
+	to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+	from{ bottom:-100px; opacity:0 } 
+	to{ bottom:0; opacity:1 }
+}
+#myDiv {
+	display: none;
+	text-align: center;
+}
+
+/* CSS for contact page */
+#contactSumbit {
+	text-align:center;
+}
+#contact {
+    width: 700px;
+    margin: 0 auto;
+	font-size: 2.5em;
+}
+.contactInput {
+	width: 100%;
+    height: 42px;
+    font-size: 1em;
+    border: 2px solid #333;
+    border-radius: 44px;
+    margin: 10px 0;
+	padding: 2px 10px;
+}
+.contactTxt {
+    width: 233px;
+}
+#comment {
+    width: 700px;
+    margin: 10px 0;
+    border: 3px solid #333;
+    border-radius: 18px;
+    font-size: 1em;
+    padding: 10px;
+}
+#submitBtn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 26px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    float: right;
+    border-radius: 51px;
+}
+#contactTitle {
+    font-size: 3em;
+    padding-left: 10%;
+}
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Wasted</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body id="background">
+      <div id="form">
+         <img id="index" src="images/logo.png" alt="Wasted">
+         <div class="index_form" id="login_form">
+            <h1 class="head">Login</h1>
+            <input name="loginEmail" type="text" id="loginEmail" placeholder="Enter ID..."><br>
+            <input name="loginPassword" type="password" id="loginPassword" placeholder="Enter Password..."><br>
+            <button class="indexB" id="loginBtn">Sign In</button>		
+         </div>
+         <p class="error" id="signInError"></p>
+         <div id="googleDiv">				
+            <button id="googleBtn">Google</button>
+         </div>
+         <div id="pop">
+            <a href="#" onclick="myFunction()">Sign Up</a>
+         </div>
+         <script>
+            function myFunction() {
+            	var popUp = document.getElementById('sign_up');
+            		if (popUp.style.display === 'block') {
+            			popUp.style.display = 'none';
+            		} else {
+            			popUp.style.display = 'block';
+            		}
+            }
+         </script>
+         <div class="index_form" id="sign_up">
+            <h1 class="head">Sign Up</h1>
+            <input name="signUpEmail" type="text" id="signUpEmail" placeholder="Enter Email..."><br>
+            <input name="signUpPassword" type="password" id="signUpPassword" placeholder="Enter Password..."><br>
+            <button class="indexB" id="signUpBtn">Sign Up</button>
+         </div>
+         <p class="error" id="signUpError"></p>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+      <script>
+         // Initialize Firebase
+         var config = {
+           apiKey: "AIzaSyAj1O3mHy232iMV6c7yBlXIqTf5iIaVep0",
+           authDomain: "wasted-bcc00.firebaseapp.com",
+           databaseURL: "https://wasted-bcc00.firebaseio.com",
+           projectId: "wasted-bcc00",
+           storageBucket: "wasted-bcc00.appspot.com",
+           messagingSenderId: "1030069725779"
+         };
+         firebase.initializeApp(config);
+      </script>
+      <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+      <script src="form.js"></script>
+   </body>
+</html>
